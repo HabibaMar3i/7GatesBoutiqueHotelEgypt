@@ -11,20 +11,7 @@ import {
     Button,
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
-
-export const AcmeLogo = () => {
-    return (
-        <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
-            <path
-                clipRule="evenodd"
-                d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-                fill="currentColor"
-                fillRule="evenodd"
-            />
-        </svg>
-    );
-};
-
+import Logo from '../Logo/Logo';
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -36,55 +23,58 @@ export default function NavbarComponent() {
     ];
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen}>
-            <NavbarContent>
+        <Navbar
+            onMenuOpenChange={setIsMenuOpen}
+            className="bg-transparent absolute top-0 left-0 right-0 z-50 px-4"
+            maxWidth="full"
+        >
+            <NavbarContent className="shrink-0">
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
+                    className="sm:hidden text-white"
                 />
-                <NavbarBrand>
+                <NavbarBrand className="shrink min-w-0">
                     <Link as={RouterLink} to="/" className="flex items-center no-underline">
-                        <AcmeLogo />
-                        <p className="font-bold text-amber-900">7 Gates Boutique Hotel Egypt</p>
+                        <Logo className="w-8 h-8 sm:w-10 sm:h-10" textClassName="text-sm sm:text-base" />
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-6" justify="center">
                 <NavbarItem>
-                    <Link as={RouterLink} to="/about" className="text-amber-900 hover:text-amber-700">
+                    <Link as={RouterLink} to="/about" className="text-brand-50 hover:text-brand-400 font-medium">
                         About Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/contact" className="text-amber-900 hover:text-amber-700">
+                    <Link as={RouterLink} to="/contact" className="text-brand-50 hover:text-brand-400 font-medium">
                         Contact Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/services" className="text-amber-900 hover:text-amber-700">
+                    <Link as={RouterLink} to="/services" className="text-brand-50 hover:text-brand-400 font-medium">
                         Our Services
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/gallery" className="text-amber-900 hover:text-amber-700">
+                    <Link as={RouterLink} to="/gallery" className="text-brand-50 hover:text-brand-400 font-medium">
                         Gallery
                     </Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarContent justify="end">
-                <NavbarItem>
-                    <Button as={RouterLink} to="/book" className="bg-yellow-950 text-white hover:bg-yellow-900 px-4 py-2 rounded" variant="flat">
+            <NavbarContent justify="end" className="shrink-0">
+                <NavbarItem className="hidden sm:flex">
+                    <Button as={RouterLink} to="/book" className="bg-brand-600 text-brand-50 hover:bg-brand-500 px-6 py-2 rounded font-semibold" variant="flat">
                         Book Now
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu>
+            <NavbarMenu className="bg-palace-900/95">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
                             as={RouterLink}
-                            className="w-full text-amber-900 hover:text-amber-700"
+                            className="w-full text-brand-50 hover:text-brand-400 font-medium"
                             to={
                                 item === "About Us" ? "/about" :
                                     item === "Contact Us" ? "/contact" :
@@ -97,6 +87,11 @@ export default function NavbarComponent() {
                         </Link>
                     </NavbarMenuItem>
                 ))}
+                <NavbarMenuItem>
+                    <Button as={RouterLink} to="/book" className="bg-brand-500 text-brand-50 hover:bg-brand-400 px-6 py-3 rounded font-semibold w-full" variant="flat">
+                        Book Now
+                    </Button>
+                </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>
     );
