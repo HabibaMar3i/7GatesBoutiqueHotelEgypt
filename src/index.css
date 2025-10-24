@@ -3,3 +3,28 @@
 /* Note: You may need to change the path to fit your project structure */
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
+
+/* Font variables and base rules for the site */
+:root {
+	--font-body: 'Cairo', 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	--font-heading: 'Cinzel', serif;
+}
+
+/* Ensure Tailwind base doesn't override our chosen body font */
+html, body {
+	height: 100%;
+	/* force the chosen body font (important because some component libraries set font-family) */
+	font-family: var(--font-body) !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility class to apply the display/heading font where desired */
+.font-display {
+	font-family: var(--font-heading) !important;
+}
+
+/* Slightly bolder headings for better presence */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-heading);
+}
