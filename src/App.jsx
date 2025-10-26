@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/Services/Services';
+import BookNow from './pages/BookNow/BookNow';
 
 function App() {
   const routes = createBrowserRouter([
@@ -19,14 +20,13 @@ function App() {
         { path: '/gallery', element: <Gallery /> },
         { path: '/contact', element: <Contact /> },
         { path: '/services', element: <Services /> },
+        { path: '/book', element: <BookNow /> },
       ]
     },
     { path: '*', element: <NotFound /> },
   ])
   return (
-    <>
-      <RouterProvider router={routes} />
-    </>
+    <RouterProvider router={routes} />
   )
 }
 
