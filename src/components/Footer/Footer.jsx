@@ -14,15 +14,15 @@ export default function Footer() {
 
                         <div className="flex flex-col md:flex-row gap-4 text-sm">
                             <div className="flex items-center">
-                                <a href="mailto:info@gatesboutiquehotelegypt.com" className="hover:text-brand-400">
+                                <a href="mailto:info@7gatesboutiquehotelegypt.com" className="hover:text-brand-400">
                                     <i className="fas fa-envelope text-brand-500 mr-1"></i>
-                                    info@gatesboutiquehotelegypt.com
+                                    info@7gatesboutiquehotelegypt.com
                                 </a>
                             </div>
                             <div className="flex items-center">
                                 <a href="tel:+201001600300" className="hover:text-brand-400">
                                     <i className="fas fa-phone text-brand-500 mr-1"></i>
-                                    01001600300
+                                    +20 1001600300
                                 </a>
                             </div>
                         </div>
