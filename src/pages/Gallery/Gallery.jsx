@@ -13,7 +13,7 @@ export default function Gallery() {
             
             <div className="py-16 px-6 bg-gradient-to-b from-palace-900 to-palace-800">
                 <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-16" data-aos="fade-up">
                         <h2 className="text-4xl font-bold mb-6 text-brand-400 font-display">Visual Journey</h2>
                         <p className="text-xl text-brand-100/80 max-w-3xl mx-auto leading-relaxed">
                             Discover the beauty and elegance of 7 Gates Boutique Hotel through our curated gallery
@@ -21,7 +21,7 @@ export default function Gallery() {
                     </div>
                     
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="100">
                             <img 
                                 src={bathroomPyramidsView} 
                                 alt="Room Bathroom with Pyramids View"
@@ -33,7 +33,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="200">
                             <img 
                                 src={spa} 
                                 alt="Spa Treatment"
@@ -45,7 +45,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="300">
                             <img 
                                 src={diningPyramids} 
                                 alt="Dining with Pyramids View"
@@ -57,7 +57,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="100">
                             <img 
                                 src={shower} 
                                 alt="Luxury Bathroom Shower"
@@ -69,7 +69,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="200">
                             <img 
                                 src={room2beds} 
                                 alt="Twin Bed Room"
@@ -81,7 +81,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="300">
                             <img 
                                 src={mosque} 
                                 alt="Mosque View"
@@ -93,7 +93,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="100">
                             <img 
                                 src={pool} 
                                 alt="Swimming Pool"
@@ -105,7 +105,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="200">
                             <img 
                                 src={poolPyramids} 
                                 alt="Pool with Pyramids View"
@@ -117,7 +117,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="300">
                             <img 
                                 src={bedRomantic} 
                                 alt="Decorated Room with Flowers"
@@ -129,7 +129,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="100">
                             <img 
                                 src={bathtubPyramidsFlower} 
                                 alt="Bathtub with Pyramids View"
@@ -141,7 +141,7 @@ export default function Gallery() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20" data-aos="zoom-in" data-aos-delay="200">
                             <img 
                                 src={dining} 
                                 alt="Fine Dining Area"
@@ -154,7 +154,7 @@ export default function Gallery() {
                         </div>
                     </div>
                     
-                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center">
+                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center" data-aos="fade-up">
                         <h3 className="text-3xl font-semibold mb-6 text-brand-400 font-display">Experience the Magic</h3>
                         <p className="text-lg text-brand-100/80 max-w-4xl mx-auto leading-relaxed">
                             Every corner of 7 Gates Boutique Hotel tells a story of luxury, heritage, and unforgettable moments. From intimate dining spaces to expansive terraces overlooking the ancient wonders, our hotel offers countless opportunities to create lasting memories in one of the world's most iconic destinations.

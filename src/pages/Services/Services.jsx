@@ -13,7 +13,7 @@ export default function Services() {
             
             <div className="py-16 px-6 bg-gradient-to-b from-palace-900 to-palace-800">
                 <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-16" data-aos="fade-up">
                         <h2 className="text-4xl font-bold mb-6 text-brand-400 font-display">Luxury Amenities & Services</h2>
                         <p className="text-xl text-brand-100/80 max-w-3xl mx-auto leading-relaxed">
                             Indulge in world-class amenities designed to elevate your Egyptian adventure
@@ -21,7 +21,7 @@ export default function Services() {
                     </div>
                     
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="100">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-bed text-white text-2xl"></i>
                             </div>
@@ -31,7 +31,7 @@ export default function Services() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="200">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-swimming-pool text-white text-2xl"></i>
                             </div>
@@ -41,7 +41,7 @@ export default function Services() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="300">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-spa text-white text-2xl"></i>
                             </div>
@@ -51,7 +51,7 @@ export default function Services() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="100">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-utensils text-white text-2xl"></i>
                             </div>
@@ -61,7 +61,7 @@ export default function Services() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="200">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-user-tie text-white text-2xl"></i>
                             </div>
@@ -71,7 +71,7 @@ export default function Services() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="300">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-theater-masks text-white text-2xl"></i>
                             </div>
@@ -82,21 +82,21 @@ export default function Services() {
                         </div>
                     </div>
                     
-                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center">
+                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center" data-aos="zoom-in">
                         <h3 className="text-3xl font-semibold mb-6 text-brand-400 font-display">Personalized Service</h3>
                         <p className="text-lg text-brand-100/80 max-w-4xl mx-auto leading-relaxed mb-8">
                             Our dedicated concierge team is available 24/7 to curate personalized experiences, from private desert excursions to exclusive dining reservations. Every detail is tailored to create your perfect Egyptian getaway.
                         </p>
                         <div className="grid md:grid-cols-3 gap-6 text-center">
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="100">
                                 <div className="text-2xl font-bold text-brand-400 mb-2">24/7</div>
                                 <p className="text-brand-200">Concierge Service</p>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="200">
                                 <div className="text-2xl font-bold text-brand-400 mb-2">5-Star</div>
                                 <p className="text-brand-200">Luxury Rating</p>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="300">
                                 <div className="text-2xl font-bold text-brand-400 mb-2">Premium</div>
                                 <p className="text-brand-200">Location</p>
                             </div>

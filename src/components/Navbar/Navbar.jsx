@@ -27,20 +27,22 @@ export default function NavbarComponent() {
             onMenuOpenChange={setIsMenuOpen}
             className="bg-transparent absolute top-0 left-0 right-0 z-50 px-4"
             maxWidth="full"
+            data-aos="fade-down"
+            data-aos-duration="1000"
         >
             <NavbarContent className="shrink-0">
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden text-white"
                 />
-                <NavbarBrand className="shrink min-w-0">
+                <NavbarBrand className="shrink min-w-0" data-aos="fade-right" data-aos-delay="200">
                     <Link as={RouterLink} to="/" className="flex items-center no-underline">
                         <Logo className="w-8 h-8 sm:w-10 sm:h-10" textClassName="text-sm sm:text-base" />
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-6" justify="center">
+            <NavbarContent className="hidden sm:flex gap-6" justify="center" data-aos="fade-down" data-aos-delay="300">
                 <NavbarItem>
                     <Link as={RouterLink} to="/about" className="text-brand-50 hover:text-brand-400 font-medium">
                         About Us
@@ -62,7 +64,7 @@ export default function NavbarComponent() {
                     </Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarContent justify="end" className="shrink-0">
+            <NavbarContent justify="end" className="shrink-0" data-aos="fade-left" data-aos-delay="400">
                 <NavbarItem className="hidden sm:flex">
                     <Button as={RouterLink} to="/book" className="bg-brand-600 text-brand-50 hover:bg-brand-500 px-6 py-2 rounded font-semibold" variant="flat">
                         Book Now

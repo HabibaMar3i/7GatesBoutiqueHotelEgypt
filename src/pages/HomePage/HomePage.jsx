@@ -12,7 +12,7 @@ export default function HomePage() {
             
             <div className="py-16 px-6 bg-gradient-to-b from-palace-900 to-palace-800">
                 <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-16" data-aos="fade-up">
                         <h2 className="text-4xl font-bold mb-6 text-brand-400 font-display">Welcome to Luxury</h2>
                         <p className="text-xl text-brand-100/80 max-w-3xl mx-auto leading-relaxed mb-12">
                             Discover the perfect blend of modern luxury and ancient wonder at 7 Gates Boutique Hotel Egypt. Where elegance meets Egyptian heritage in the shadow of the Great Pyramids.
@@ -20,7 +20,7 @@ export default function HomePage() {
                     </div>
                     
                     <div className="grid md:grid-cols-3 gap-8 mb-16">
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="fade-up" data-aos-delay="100">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-mountain text-white text-2xl"></i>
                             </div>
@@ -30,7 +30,7 @@ export default function HomePage() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="fade-up" data-aos-delay="200">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-gem text-white text-2xl"></i>
                             </div>
@@ -40,7 +40,7 @@ export default function HomePage() {
                             </p>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="fade-up" data-aos-delay="300">
                             <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fas fa-landmark text-white text-2xl"></i>
                             </div>
@@ -51,26 +51,26 @@ export default function HomePage() {
                         </div>
                     </div>
                     
-                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center mb-16">
+                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center mb-16" data-aos="zoom-in">
                         <h3 className="text-3xl font-semibold mb-6 text-brand-400 font-display">Your Gateway to Ancient Wonders</h3>
                         <p className="text-lg text-brand-100/80 max-w-4xl mx-auto leading-relaxed">
                             Experience the magic of Egypt from our exclusive location on Pyramids Road. Our boutique hotel offers unparalleled access to the Giza complex while providing a serene oasis of comfort and sophistication. From our rooftop infinity pool to our award-winning restaurants, every moment is crafted to create unforgettable memories.
                         </p>
                     </div>
                     
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12" data-aos="fade-up">
                         <h3 className="text-3xl font-semibold mb-6 text-brand-400 font-display">Experience Our Luxury</h3>
                         <p className="text-brand-100/80 max-w-2xl mx-auto">Discover the finest amenities and breathtaking views that await you</p>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-[200px]">
+                    <div className="grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-[200px]" data-aos="fade-up">
                         {/* Large featured image - Pool with pyramids */}
-                        <div className="md:col-span-3 md:row-span-2 relative">
+                        <div className="md:col-span-3 md:row-span-2 relative" data-aos="zoom-in" data-aos-delay="100">
                             <div className="bg-brand-50/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-400/20 h-full group cursor-pointer relative">
                                 <img 
                                     src={poolPyramids}
                                     alt="Pool with Pyramids View"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 hover-scale"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-6 left-6 text-white">
@@ -82,12 +82,12 @@ export default function HomePage() {
                         </div>
                         
                         {/* Dining with pyramids */}
-                        <div className="md:col-span-2 relative">
+                        <div className="md:col-span-2 relative" data-aos="fade-left" data-aos-delay="200">
                             <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20 h-full group cursor-pointer relative">
                                 <img 
                                     src={diningPyramids}
                                     alt="Dining with Pyramids View"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-4 left-4 text-white">
@@ -98,23 +98,23 @@ export default function HomePage() {
                         </div>
                         
                         {/* Spa treatment */}
-                        <div className="relative">
+                        <div className="relative" data-aos="fade-left" data-aos-delay="300">
                             <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20 h-full group cursor-pointer">
                                 <img 
                                     src={spa}
                                     alt="Spa Treatment"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>
                         
                         {/* Bathtub with flowers */}
-                        <div className="md:col-span-2 relative">
+                        <div className="md:col-span-2 relative" data-aos="fade-up" data-aos-delay="400">
                             <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20 h-full group cursor-pointer relative">
                                 <img 
                                     src={bathtubPyramidsFlower}
                                     alt="Luxury Bathtub"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-4 left-4 text-white">
@@ -125,12 +125,12 @@ export default function HomePage() {
                         </div>
                         
                         {/* Romantic bedroom */}
-                        <div className="relative">
+                        <div className="relative" data-aos="fade-up" data-aos-delay="500">
                             <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl overflow-hidden border border-brand-400/20 h-full group cursor-pointer">
                                 <img 
                                     src={bedRomantic}
                                     alt="Romantic Suite"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>
@@ -141,7 +141,7 @@ export default function HomePage() {
                                 <img 
                                     src={pool}
                                     alt="Pool Area"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
                                 <img 
                                     src={bathroomPyramidsView}
                                     alt="Bathroom with Pyramid View"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-4 left-4 text-white">
@@ -168,7 +168,7 @@ export default function HomePage() {
                                 <img 
                                     src={room2beds}
                                     alt="Twin Bed Room"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>
@@ -179,7 +179,7 @@ export default function HomePage() {
                                 <img 
                                     src={dining}
                                     alt="Dining Area"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
                                 <img 
                                     src={mosque}
                                     alt="Cultural Views"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                         </div>

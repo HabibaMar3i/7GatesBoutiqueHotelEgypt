@@ -13,14 +13,14 @@ export default function Contact() {
             
             <div className="py-16 px-6 bg-gradient-to-b from-palace-900 to-palace-800">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold text-center mb-12 text-brand-400 font-display">Get In Touch</h2>
+                    <h2 className="text-4xl font-bold text-center mb-12 text-brand-400 font-display" data-aos="fade-up">Get In Touch</h2>
                     
                     <div className="grid md:grid-cols-2 gap-12">
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 h-full">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 h-full" data-aos="fade-right" data-aos-delay="200">
                             <h3 className="text-2xl font-semibold mb-6 text-brand-300">Contact Information</h3>
                             
                             <div className="space-y-4 mb-8">
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="300">
                                     <div className="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center">
                                         <i className="fas fa-phone text-white"></i>
                                     </div>
@@ -30,7 +30,7 @@ export default function Contact() {
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="400">
                                     <div className="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center">
                                         <i className="fas fa-envelope text-white"></i>
                                     </div>
@@ -40,7 +40,7 @@ export default function Contact() {
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="500">
                                     <div className="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center">
                                         <i className="fas fa-map-marker-alt text-white"></i>
                                     </div>
@@ -82,9 +82,9 @@ export default function Contact() {
                             </div>
                         </div>
                         
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 h-full">
+                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 h-full" data-aos="fade-left" data-aos-delay="200">
                             <h3 className="text-2xl font-semibold mb-6 text-brand-300">Find Us</h3>
-                            <div className="w-full h-80 rounded-lg overflow-hidden">
+                            <div className="w-full h-80 rounded-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
                                 <iframe 
                                     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d4796.573199084845!2d31.1290353!3d29.9882657!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2seg!4v1761499149344!5m2!1sen!2seg"
                                     width="100%" 
