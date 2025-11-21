@@ -1,6 +1,7 @@
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Testimonials from '../../components/Testimonials/Testimonials';
-import { roomMaster } from '../../assets/images';
+import ImageGrid from '../../components/ImageGrid/ImageGrid';
+import { roomMaster, rommTwinbed } from '../../assets/images';
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
@@ -40,6 +41,22 @@ export default function HomePage() {
             </section>
             
             <Testimonials />
+            <ImageGrid />
+            
+            <section className="relative h-96 overflow-hidden">
+                <img src={rommTwinbed} alt="Hotel Building" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-black/60"></div>
+                <div className="relative z-10 flex items-center justify-center h-full px-6">
+                    <div className="text-center text-white">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-8 font-display">
+                            BOOK YOUR STAY
+                        </h2>
+                        <Link to="/book" className="bg-[#ba8b4e] text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-[#ba8b4e]/90 transition-colors inline-block no-underline">
+                            Reserve Now
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
