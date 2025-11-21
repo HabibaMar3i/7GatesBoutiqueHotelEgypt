@@ -23,56 +23,61 @@ export default function NavbarComponent() {
 
     return (
         <Navbar
+            isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
-            className="bg-transparent absolute top-0 left-0 right-0 z-50 px-4"
+            className="bg-white px-4"
             maxWidth="full"
         >
-            <NavbarContent className="shrink-0">
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
-                />
-                <NavbarBrand className="shrink min-w-0">
-                    <Link as={RouterLink} to="/" className="flex items-center no-underline">
+            <NavbarContent justify="start" className="flex-grow-0">
+                <NavbarBrand className="flex items-center gap-3">
+                    <Link as={RouterLink} to="/" className="flex items-center gap-3 no-underline">
+                        <img src="/src/assets/Logo-Notext-cropped.svg" alt="Logo" className="h-10 w-auto" />
+                        <span className="text-[#BA9B09] font-semibold text-lg font-display">7 Gates Boutique Hotel Egypt</span>
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-6" justify="center">
+            <NavbarContent className="hidden sm:flex gap-6" justify="end">
                 <NavbarItem>
-                    <Link as={RouterLink} to="/about" className="font-medium">
+                    <Link as={RouterLink} to="/about" className="font-medium text-[#BA9B09] hover:text-[#BA9B09]/80">
                         About Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/contact" className="font-medium">
+                    <Link as={RouterLink} to="/contact" className="font-medium text-[#BA9B09] hover:text-[#BA9B09]/80">
                         Contact Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/services" className="font-medium">
+                    <Link as={RouterLink} to="/services" className="font-medium text-[#BA9B09] hover:text-[#BA9B09]/80">
                         Our Services
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/gallery" className="font-medium">
+                    <Link as={RouterLink} to="/gallery" className="font-medium text-[#BA9B09] hover:text-[#BA9B09]/80">
                         Gallery
                     </Link>
                 </NavbarItem>
-            </NavbarContent>
-            <NavbarContent justify="end" className="shrink-0">
-                <NavbarItem className="hidden sm:flex">
-                    <Button as={RouterLink} to="/book" className="px-6 py-2 rounded font-semibold" variant="flat">
+                <NavbarItem>
+                    <Button as={RouterLink} to="/book" className="bg-[#BA9B09] text-white hover:bg-[#BA9B09]/90 px-6 py-2 rounded font-semibold" variant="flat">
                         Book Now
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu>
+
+            <NavbarContent className="sm:hidden" justify="end">
+                <NavbarMenuToggle
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    className="text-[#BA9B09]"
+                />
+            </NavbarContent>
+
+            <NavbarMenu className="bg-white">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
                             as={RouterLink}
-                            className="w-full font-medium"
+                            className="w-full font-medium text-[#BA9B09]"
                             to={
                                 item === "About Us" ? "/about" :
                                     item === "Contact Us" ? "/contact" :
@@ -80,13 +85,14 @@ export default function NavbarComponent() {
                                             item === "Gallery" ? "/gallery" : "#"
                             }
                             size="lg"
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             {item}
                         </Link>
                     </NavbarMenuItem>
                 ))}
                 <NavbarMenuItem>
-                    <Button as={RouterLink} to="/book" className="px-6 py-3 rounded font-semibold w-full" variant="flat">
+                    <Button as={RouterLink} to="/book" className="bg-[#BA9B09] text-white px-6 py-3 rounded font-semibold w-full" variant="flat" onClick={() => setIsMenuOpen(false)}>
                         Book Now
                     </Button>
                 </NavbarMenuItem>
