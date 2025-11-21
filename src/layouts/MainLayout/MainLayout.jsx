@@ -12,7 +12,7 @@ export default function MainLayout() {
         setIsLoading(true)
         const timer = setTimeout(() => {
             setIsLoading(false)
-        }, 800)
+        }, 300)
         return () => clearTimeout(timer)
     }, [location.pathname])
 

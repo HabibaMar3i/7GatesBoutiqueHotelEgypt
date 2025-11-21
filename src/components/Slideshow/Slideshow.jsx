@@ -8,6 +8,7 @@ import {
     viewPool, 
     roomMaster, 
 } from '../../assets/images';
+import { preloadImages } from '../../utils/imagePreloader';
 
 export default function Slideshow() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +24,8 @@ export default function Slideshow() {
     ];
 
     useEffect(() => {
+        preloadImages(slides);
+        
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
         }, 4000);

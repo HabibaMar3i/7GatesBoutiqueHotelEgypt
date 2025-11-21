@@ -11,6 +11,8 @@ import {
     Button,
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
+import { preloadImages } from '../../utils/imagePreloader';
+import { pyramidsView, view, diningPyramidsSun, roomPyramids, viewPool } from '../../assets/images';
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -39,27 +41,53 @@ export default function NavbarComponent() {
 
             <NavbarContent className="hidden sm:flex gap-6" justify="end">
                 <NavbarItem>
-                    <Link as={RouterLink} to="/about" className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80">
+                    <Link 
+                        as={RouterLink} 
+                        to="/about" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([pyramidsView])}
+                    >
                         About Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/contact" className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80">
+                    <Link 
+                        as={RouterLink} 
+                        to="/contact" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([diningPyramidsSun])}
+                    >
                         Contact Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/services" className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80">
+                    <Link 
+                        as={RouterLink} 
+                        to="/services" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([view])}
+                    >
                         Our Services
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/gallery" className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80">
+                    <Link 
+                        as={RouterLink} 
+                        to="/gallery" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([viewPool])}
+                    >
                         Gallery
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button as={RouterLink} to="/book" className="bg-[#ba8b4e] text-white hover:bg-[#ba8b4e]/90 px-6 py-2 rounded font-semibold" variant="flat">
+                    <Button 
+                        as={RouterLink} 
+                        to="/book" 
+                        className="bg-[#ba8b4e] text-white hover:bg-[#ba8b4e]/90 px-6 py-2 rounded font-semibold" 
+                        variant="flat"
+                        onMouseEnter={() => preloadImages([roomPyramids])}
+                    >
                         Book Now
                     </Button>
                 </NavbarItem>
