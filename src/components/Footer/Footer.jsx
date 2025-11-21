@@ -46,9 +46,12 @@ export default function Footer() {
 
                 {/* Location */}
                 <div>
-                    <a href="https://maps.app.goo.gl/PGacv5k8PbhWTVMj8" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80">
+                    <p className="text-white mb-2">
                         <i className="fas fa-map-marker-alt mr-2"></i>
-                        View Location
+                        11 Khattab St, Al Remaya, Al Haram, Giza Governorate
+                    </p>
+                    <a href="https://maps.app.goo.gl/PGacv5k8PbhWTVMj8" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 underline">
+                        View on Map
                     </a>
                 </div>
 
