@@ -3,7 +3,7 @@ import { roomPyramids, roomCurtains, roomPyramids2 } from '../../assets/images';
 
 export default function BookNow() {
     return (
-        <div>
+        <div className="bg-white min-h-screen">
             <Hero 
                 title="Book Your Stay" 
                 subtitle="Reserve your luxury experience at 7 Gates Boutique Hotel"

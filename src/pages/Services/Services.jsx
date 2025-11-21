@@ -44,7 +44,7 @@ export default function Services() {
     ];
 
     return (
-        <div>
+        <div className="bg-white min-h-screen">
             <Hero 
                 title="Our Services" 
                 subtitle="Luxury amenities and personalized experiences await you"

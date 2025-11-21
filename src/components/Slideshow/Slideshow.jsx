@@ -25,7 +25,7 @@ export default function Slideshow() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 3500);
+        }, 4000);
         return () => clearInterval(timer);
     }, [slides.length]);
 
@@ -34,11 +34,16 @@ export default function Slideshow() {
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ${
+                    className={`absolute inset-0 transition-opacity duration-700 ${
                         index === currentSlide ? 'opacity-100' : 'opacity-0'
                     }`}
-                    style={{ backgroundImage: `url(${slide})` }}
                 >
+                    <img 
+                        src={slide} 
+                        alt={`Slide ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                    />
                     <div className="absolute inset-0 bg-black/40"></div>
                 </div>
             ))}

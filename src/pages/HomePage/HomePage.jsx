@@ -3,12 +3,21 @@ import Testimonials from '../../components/Testimonials/Testimonials';
 import ImageGrid from '../../components/ImageGrid/ImageGrid';
 import { roomMaster, rommTwinbed } from '../../assets/images';
 import { Link } from 'react-router-dom';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 export default function HomePage() {
+    const [welcomeRef, welcomeVisible] = useScrollAnimation(0.2);
+    const [suitesRef, suitesVisible] = useScrollAnimation(0.2);
+    
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden bg-white min-h-screen">
             <Slideshow />
-            <section className="bg-[#ba8b4e] py-24 px-4 md:px-12">
+            <section 
+                ref={welcomeRef}
+                className={`bg-[#ba8b4e] py-24 px-4 md:px-12 transition-all duration-700 ${
+                    welcomeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                }`}
+            >
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white font-display">
                         WELCOME TO 7 GATES
@@ -19,11 +28,21 @@ export default function HomePage() {
                 </div>
             </section>
             
-            <section className="bg-white py-24 px-4 md:px-12">
+            <section 
+                ref={suitesRef}
+                className={`bg-white py-24 px-4 md:px-12 transition-all duration-700 ${
+                    suitesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                }`}
+            >
                 <div className="max-w-6xl mx-auto">
                     <div className="flex flex-col md:flex-row items-center gap-12">
                         <div className="md:w-1/2">
-                            <img src={roomMaster} alt="Luxury Suite" className="w-full h-96 object-cover rounded-lg" />
+                            <img 
+                                src={roomMaster} 
+                                alt="Luxury Suite" 
+                                className="w-full h-96 object-cover rounded-lg transition-transform duration-500 hover:scale-105" 
+                                loading="lazy"
+                            />
                         </div>
                         <div className="md:w-1/2">
                             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#ba8b4e] font-display">
@@ -44,7 +63,12 @@ export default function HomePage() {
             <ImageGrid />
             
             <section className="relative h-96 overflow-hidden">
-                <img src={rommTwinbed} alt="Hotel Building" className="absolute inset-0 w-full h-full object-cover" />
+                <img 
+                    src={rommTwinbed} 
+                    alt="Hotel Building" 
+                    className="absolute inset-0 w-full h-full object-cover" 
+                    loading="lazy"
+                />
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 flex items-center justify-center h-full px-6">
                     <div className="text-center text-white">

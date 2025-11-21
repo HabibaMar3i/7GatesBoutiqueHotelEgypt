@@ -3,7 +3,7 @@ import { diningPyramidsSun } from '../../assets/images';
 
 export default function Contact() {
     return (
-        <div>
+        <div className="bg-white min-h-screen">
             <Hero 
                 title="Contact Us" 
                 subtitle="Get in touch with us for reservations and inquiries"

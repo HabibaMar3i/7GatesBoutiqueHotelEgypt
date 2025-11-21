@@ -3,7 +3,7 @@ import { pyramidsView, viewNight, lightDecorGood } from '../../assets/images';
 
 export default function About() {
     return (
-        <div>
+        <div className="bg-white min-h-screen">
             <Hero 
                 title="About Us" 
                 subtitle="Discover our story and commitment to exceptional hospitality"
