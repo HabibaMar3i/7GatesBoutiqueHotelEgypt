@@ -1,7 +1,9 @@
+import Slideshow from '../../components/Slideshow/Slideshow';
+
 export default function HomePage() {
     return (
-        <div>
-            <h1>Hi</h1>
-        </div>
-    )
+        <>
+            <Slideshow />
+        </>
+    );
 }
