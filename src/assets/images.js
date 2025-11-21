@@ -1,6 +1,6 @@
 // Hotel Images
-import diningPyramids from './dining-pyramids.jpeg';
+import barKitchenRoom from './bar-kitchen-room.jpg';
 
 export {
-    diningPyramids
+    barKitchenRoom
 };
