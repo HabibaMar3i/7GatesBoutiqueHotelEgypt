@@ -1,5 +1,4 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { logoWhite } from '../../assets/images';
 
 export default function Footer() {
     return (
@@ -7,7 +6,7 @@ export default function Footer() {
             <div className="max-w-md mx-auto text-center space-y-6">
                 {/* Logo and Text */}
                 <div className="flex flex-col items-center">
-                    <img src={logoWhite} alt="Logo" className="h-66 w-auto" />
+                    <img src="/logo-text-white-cropped.svg" alt="Logo" className="h-66 w-auto" />
                 </div>
 
                 {/* Navigation Pages */}

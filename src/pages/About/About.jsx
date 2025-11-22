@@ -1,5 +1,5 @@
 import Hero from '../../components/Hero/Hero';
-import { pyramidsView, viewNight, lightDecorGood } from '../../assets/images';
+
 
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
             <Hero 
                 title="About Us" 
                 subtitle="Discover our story and commitment to exceptional hospitality"
-                backgroundImage={pyramidsView}
+                backgroundImage="/pyramids-view.webp"
                 height="h-96"
             />
             
@@ -22,7 +22,7 @@ export default function About() {
                             </p>
                         </div>
                         <div>
-                            <img src={viewNight} alt="Hotel Reception" className="w-full h-80 object-cover rounded-lg" data-aos="fade-left" />
+                            <img src="/view-night.webp" alt="Hotel Reception" className="w-full h-80 object-cover rounded-lg" data-aos="fade-left" />
                         </div>
                     </div>
                     
@@ -37,7 +37,7 @@ export default function About() {
                             </p>
                         </div>
                         <div className="md:order-1">
-                            <img src={lightDecorGood} alt="Hotel Building" className="w-full h-80 object-cover rounded-lg" data-aos="fade-right" />
+                            <img src="/light-decor-good.webp" alt="Hotel Building" className="w-full h-80 object-cover rounded-lg" data-aos="fade-right" />
                         </div>
                     </div>
                     

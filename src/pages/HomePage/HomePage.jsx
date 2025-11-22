@@ -1,7 +1,7 @@
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ImageGrid from '../../components/ImageGrid/ImageGrid';
-import { roomMaster, rommTwinbed } from '../../assets/images';
+
 import { Link } from 'react-router-dom';
 
 
@@ -26,7 +26,7 @@ export default function HomePage() {
                     <div className="flex flex-col md:flex-row items-center gap-12">
                         <div className="md:w-1/2">
                             <img 
-                                src={roomMaster} 
+                                src="/room-master.webp" 
                                 alt="Luxury Suite" 
                                 className="w-full h-96 object-cover rounded-lg" 
                                 loading="lazy"
@@ -53,7 +53,7 @@ export default function HomePage() {
             
             <section className="relative h-96 overflow-hidden">
                 <img 
-                    src={rommTwinbed} 
+                    src="/room-twinbed.webp" 
                     alt="Hotel Building" 
                     className="absolute inset-0 w-full h-full object-cover" 
                     loading="lazy"

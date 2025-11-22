@@ -1,31 +1,20 @@
 import { useState, useEffect } from 'react';
-import { 
-    pool, 
-    reception, 
-    wholeBuilding3, 
-    roomPyramids, 
-    diningPyramids, 
-    viewPool, 
-    roomMaster, 
-} from '../../assets/images';
-import { preloadImages } from '../../utils/imagePreloader';
+
 
 export default function Slideshow() {
     const [currentSlide, setCurrentSlide] = useState(0);
     
     const slides = [
-        pool,
-        reception,
-        wholeBuilding3,
-        roomPyramids,
-        diningPyramids,
-        viewPool,
-        roomMaster,
+        "/pool.webp",
+        "/reception.webp",
+        "/whole-building3.webp",
+        "/room-pyramids.webp",
+        "/dining-pyramids.webp",
+        "/view-pool.webp",
+        "/room-master.webp",
     ];
 
     useEffect(() => {
-        preloadImages(slides);
-        
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
         }, 4000);

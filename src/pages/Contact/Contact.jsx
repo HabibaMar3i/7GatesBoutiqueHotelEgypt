@@ -1,5 +1,5 @@
 import Hero from '../../components/Hero/Hero';
-import { diningPyramidsSun } from '../../assets/images';
+
 
 
 export default function Contact() {
@@ -8,7 +8,7 @@ export default function Contact() {
             <Hero 
                 title="Contact Us" 
                 subtitle="Get in touch with us for reservations and inquiries"
-                backgroundImage={diningPyramidsSun}
+                backgroundImage="/dining-pyramids-sun.webp"
                 height="h-96"
             />
             

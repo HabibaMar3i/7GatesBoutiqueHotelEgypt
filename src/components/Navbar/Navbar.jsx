@@ -12,7 +12,7 @@ import {
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
 import { preloadImages } from '../../utils/imagePreloader';
-import { pyramidsView, view, diningPyramidsSun, roomPyramids, viewPool, logoNoText } from '../../assets/images';
+
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -33,7 +33,7 @@ export default function NavbarComponent() {
             <NavbarContent justify="start" className="flex-grow">
                 <NavbarBrand className="flex items-center gap-3 max-w-none">
                     <Link as={RouterLink} to="/" className="flex items-center gap-2 no-underline">
-                        <img src={logoNoText} alt="Logo" className="h-8 sm:h-10 w-auto" />
+                        <img src="/Logo-Notext-cropped.svg" alt="Logo" className="h-8 sm:h-10 w-auto" />
                         <span className="text-[#ba8b4e] font-semibold text-sm sm:text-lg font-display hidden xs:block sm:block">7 Gates Boutique Hotel Egypt</span>
                         <span className="text-[#ba8b4e] font-semibold text-sm font-display block xs:hidden sm:hidden">7 Gates</span>
                     </Link>
@@ -46,7 +46,7 @@ export default function NavbarComponent() {
                         as={RouterLink} 
                         to="/about" 
                         className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
-                        onMouseEnter={() => preloadImages([pyramidsView])}
+
                     >
                         About Us
                     </Link>
@@ -56,7 +56,7 @@ export default function NavbarComponent() {
                         as={RouterLink} 
                         to="/contact" 
                         className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
-                        onMouseEnter={() => preloadImages([diningPyramidsSun])}
+
                     >
                         Contact Us
                     </Link>
@@ -66,7 +66,7 @@ export default function NavbarComponent() {
                         as={RouterLink} 
                         to="/services" 
                         className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
-                        onMouseEnter={() => preloadImages([view])}
+
                     >
                         Our Services
                     </Link>
@@ -76,7 +76,7 @@ export default function NavbarComponent() {
                         as={RouterLink} 
                         to="/gallery" 
                         className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
-                        onMouseEnter={() => preloadImages([viewPool])}
+
                     >
                         Gallery
                     </Link>
@@ -87,7 +87,7 @@ export default function NavbarComponent() {
                         to="/book" 
                         className="bg-[#ba8b4e] text-white hover:bg-[#ba8b4e]/90 px-6 py-2 rounded font-semibold" 
                         variant="flat"
-                        onMouseEnter={() => preloadImages([roomPyramids])}
+
                     >
                         Book Now
                     </Button>

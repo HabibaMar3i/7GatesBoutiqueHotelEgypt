@@ -1,13 +1,4 @@
 import Hero from '../../components/Hero/Hero';
-import { 
-    sauna2, 
-    pool, 
-    roomMaster, 
-    dining2, 
-    view, 
-    openBuffet,
-    reception
-} from '../../assets/images';
 
 
 export default function Services() {
@@ -15,32 +6,32 @@ export default function Services() {
         {
             title: "Luxury Suites",
             description: "Elegantly appointed rooms and suites with panoramic pyramid views, marble bathrooms, and premium Egyptian cotton linens.",
-            image: roomMaster
+            image: "/room-master.webp"
         },
         {
             title: "Infinity Pool",
             description: "Stunning rooftop infinity pool with unobstructed views of the Pyramids, perfect for sunset swims and stargazing.",
-            image: pool
+            image: "/pool.webp"
         },
         {
             title: "Spa & Jacuzzi",
             description: "Rejuvenating spa treatments and private jacuzzi suites offering ancient Egyptian wellness rituals and modern therapies.",
-            image: sauna2
+            image: "/sauna2.webp"
         },
         {
             title: "Gourmet Dining",
             description: "Award-winning restaurants featuring authentic Egyptian cuisine and international dishes crafted by renowned chefs.",
-            image: dining2
+            image: "/dining2.webp"
         },
         {
             title: "Master Chefs",
             description: "Internationally trained culinary masters specializing in Egyptian delicacies, Mediterranean fusion, and contemporary cuisine.",
-            image: openBuffet
+            image: "/open-buffet.webp"
         },
         {
             title: "Cultural Experiences",
             description: "Exclusive guided tours, private pyramid access, traditional music performances, and authentic cultural immersion programs.",
-            image: reception
+            image: "/reception.webp"
         }
     ];
 
@@ -49,7 +40,7 @@ export default function Services() {
             <Hero 
                 title="Our Services" 
                 subtitle="Luxury amenities and personalized experiences await you"
-                backgroundImage={view}
+                backgroundImage="/view.webp"
                 height="h-96"
             />
             
