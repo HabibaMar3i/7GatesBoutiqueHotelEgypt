@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { viewPool, diningPyramids, roomMaster, spa } from '../../assets/images';
 
 export default function Testimonials() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,7 +22,7 @@ export default function Testimonials() {
         }
     ];
 
-    const backgroundImages = [viewPool, diningPyramids, roomMaster, spa];
+    const backgroundImages = ["/view-pool.webp", "/dining-pyramids.webp", "/room-master.webp", "/spa.webp"];
 
     useEffect(() => {
         const timer = setInterval(() => {

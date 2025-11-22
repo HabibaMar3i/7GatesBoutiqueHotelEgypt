@@ -1,11 +1,9 @@
-import { bathroom, dining2, jacussi2, view } from '../../assets/images';
-
 export default function ImageGrid() {
     const images = [
-        { src: bathroom, alt: "Luxury Bathroom" },
-        { src: dining2, alt: "Dining Area" },
-        { src: jacussi2, alt: "Jacuzzi" },
-        { src: view, alt: "Hotel View" }
+        { src: "/bathroom.webp", alt: "Luxury Bathroom" },
+        { src: "/dining (2).webp", alt: "Dining Area" },
+        { src: "/jacussi (2).webp", alt: "Jacuzzi" },
+        { src: "/view.webp", alt: "Hotel View" }
     ];
 
     return (

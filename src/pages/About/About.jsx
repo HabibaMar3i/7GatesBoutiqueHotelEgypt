@@ -1,7 +1,4 @@
 import Hero from '../../components/Hero/Hero';
-o
-
-
 
 export default function About() {
     return (

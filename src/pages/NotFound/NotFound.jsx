@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import { pyramidsView } from '../../assets/images';
 
 export default function NotFound() {
     return (
         <div className="min-h-screen bg-white flex items-center justify-center px-4">
             <div className="max-w-2xl mx-auto text-center">
                 <div className="relative mb-12">
-                    <img src={pyramidsView} alt="Pyramids View" className="w-full h-64 object-cover rounded-lg opacity-20" />
+                    <img src="/pyramids-view.webp" alt="Pyramids View" className="w-full h-64 object-cover rounded-lg opacity-20" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h1 className="text-8xl font-bold text-[#ba8b4e] font-display">404</h1>
                     </div>

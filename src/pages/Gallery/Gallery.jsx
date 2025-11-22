@@ -1,5 +1,4 @@
 import Hero from '../../components/Hero/Hero';
-import { viewPool } from '../../assets/images';
 
 export default function Gallery() {
     return (
@@ -7,7 +6,7 @@ export default function Gallery() {
             <Hero 
                 title="Gallery" 
                 subtitle="Discover the beauty of 7 Gates Boutique Hotel Egypt"
-                backgroundImage={viewPool}
+                backgroundImage="/view-pool.webp"
                 height="h-96"
             />
             
