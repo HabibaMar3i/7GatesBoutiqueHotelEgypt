@@ -9,8 +9,10 @@ import MainLayout from './layouts/MainLayout/MainLayout';
 import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/Services/Services';
 import BookNow from './pages/BookNow/BookNow';
+import { useImageCache } from './hooks/useImageCache';
 
 function App() {
+  useImageCache();
   const routes = createBrowserRouter([
     {
       path: '', element: <MainLayout />, children: [
