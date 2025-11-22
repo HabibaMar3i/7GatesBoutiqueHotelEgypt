@@ -4,30 +4,7 @@
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-/* Custom brand colors */
-@theme {
-  --color-brand-50: #faf8f3;
-  --color-brand-100: #f4f0e6;
-  --color-brand-200: #e8dcc6;
-  --color-brand-300: #d9c49f;
-  --color-brand-400: #c8a876;
-  --color-brand-500: #ba8b4e;
-  --color-brand-600: #a67a44;
-  --color-brand-700: #8a6439;
-  --color-brand-800: #715233;
-  --color-brand-900: #5c432b;
-  
-  --color-palace-50: #f8f7f4;
-  --color-palace-100: #f0ede6;
-  --color-palace-200: #e0d9cc;
-  --color-palace-300: #ccc0ab;
-  --color-palace-400: #b5a387;
-  --color-palace-500: #a08968;
-  --color-palace-600: #8f7759;
-  --color-palace-700: #76624b;
-  --color-palace-800: #615140;
-  --color-palace-900: #504337;
-}
+
 
 /* Font variables and base rules for the site */
 :root {

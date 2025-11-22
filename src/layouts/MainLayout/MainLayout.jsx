@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Loading from '../../components/Loading/Loading'
@@ -22,10 +23,9 @@ export default function MainLayout() {
     }
 
     return (
-        <div className='flex flex-col min-h-screen'>
-            <AOSRefresh />
+        <div className='flex flex-col min-h-screen bg-white'>
             <Navbar />
-            <main className='grow'>
+            <main className='grow bg-white'>
                 <Outlet />
             </main>
             <Footer />
