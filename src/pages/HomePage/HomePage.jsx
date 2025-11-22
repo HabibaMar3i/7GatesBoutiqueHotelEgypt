@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
     
     return (
-        <div className="overflow-x-hidden bg-white min-h-screen">
+        <div className="bg-white min-h-screen overflow-x-hidden">
             <Slideshow />
             <section className="bg-[#ba8b4e] py-24 px-4 md:px-12" data-aos="fade-up">
                 <div className="max-w-4xl mx-auto text-center">

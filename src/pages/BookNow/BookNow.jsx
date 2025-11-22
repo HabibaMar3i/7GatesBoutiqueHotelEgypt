@@ -4,7 +4,7 @@ import { roomPyramids, roomCurtains, roomPyramids2 } from '../../assets/images';
 
 export default function BookNow() {
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-white min-h-screen overflow-x-hidden">
             <Hero 
                 title="Book Your Stay" 
                 subtitle="Reserve your luxury experience at 7 Gates Boutique Hotel"
@@ -25,11 +25,11 @@ export default function BookNow() {
                             </p>
                             
                             <div className="space-y-6">
-                                <div className="flex items-center gap-4">
-                                    <i className="fas fa-phone text-[#ba8b4e] text-xl"></i>
+                                <div className="flex items-start gap-4">
+                                    <i className="fas fa-phone text-[#ba8b4e] text-xl mt-1"></i>
                                     <div>
                                         <p className="text-lg text-gray-700">
-                                            Call us directly at 
+                                            Call us directly at{' '}
                                             <a href="tel:+201001600300" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold">
                                                 +20 1001600300
                                             </a>
@@ -37,12 +37,12 @@ export default function BookNow() {
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-center gap-4">
-                                    <i className="fas fa-envelope text-[#ba8b4e] text-xl"></i>
+                                <div className="flex items-start gap-4">
+                                    <i className="fas fa-envelope text-[#ba8b4e] text-xl mt-1"></i>
                                     <div>
                                         <p className="text-lg text-gray-700">
-                                            Email us at 
-                                            <a href="mailto:reservations@7gatesboutiquehotelegypt.com" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold underline">
+                                            Email us at{' '}
+                                            <a href="mailto:reservations@7gatesboutiquehotelegypt.com" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold underline break-all">
                                                 reservations@7gatesboutiquehotelegypt.com
                                             </a>
                                         </p>

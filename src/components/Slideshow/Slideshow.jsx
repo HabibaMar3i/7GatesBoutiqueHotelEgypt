@@ -33,7 +33,7 @@ export default function Slideshow() {
     }, [slides.length]);
 
     return (
-        <div className="relative h-screen overflow-hidden">
+        <div className="relative h-screen overflow-hidden w-full">
             {slides.map((slide, index) => (
                 <div
                     key={index}
@@ -44,19 +44,19 @@ export default function Slideshow() {
                     <img 
                         src={slide} 
                         alt={`Slide ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                         loading={index === 0 ? 'eager' : 'lazy'}
                     />
                     <div className="absolute inset-0 bg-black/40"></div>
                 </div>
             ))}
             
-            <div className="relative z-10 flex items-center justify-center h-full">
-                <div className="text-center text-white px-6">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
+            <div className="relative z-10 flex items-center justify-center h-full px-4">
+                <div className="text-center text-white max-w-4xl mx-auto">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 font-display leading-tight">
                         Welcome to Luxury
                     </h1>
-                    <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+                    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
                         Experience the finest boutique hospitality near the ancient Pyramids of Giza
                     </p>
                 </div>

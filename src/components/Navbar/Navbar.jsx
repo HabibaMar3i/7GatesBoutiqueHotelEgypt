@@ -30,11 +30,12 @@ export default function NavbarComponent() {
             className="bg-white px-4"
             maxWidth="full"
         >
-            <NavbarContent justify="start" className="flex-grow-0">
-                <NavbarBrand className="flex items-center gap-3">
-                    <Link as={RouterLink} to="/" className="flex items-center gap-3 no-underline">
-                        <img src={logoNoText} alt="Logo" className="h-10 w-auto" />
-                        <span className="text-[#ba8b4e] font-semibold text-lg font-display">7 Gates Boutique Hotel Egypt</span>
+            <NavbarContent justify="start" className="flex-grow">
+                <NavbarBrand className="flex items-center gap-3 max-w-none">
+                    <Link as={RouterLink} to="/" className="flex items-center gap-2 no-underline">
+                        <img src={logoNoText} alt="Logo" className="h-8 sm:h-10 w-auto" />
+                        <span className="text-[#ba8b4e] font-semibold text-sm sm:text-lg font-display hidden xs:block sm:block">7 Gates Boutique Hotel Egypt</span>
+                        <span className="text-[#ba8b4e] font-semibold text-sm font-display block xs:hidden sm:hidden">7 Gates</span>
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
