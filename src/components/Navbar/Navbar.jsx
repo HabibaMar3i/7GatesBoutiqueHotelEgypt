@@ -11,7 +11,8 @@ import {
     Button,
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
-import Logo from '../Logo/Logo';
+import { preloadImages } from '../../utils/imagePreloader';
+import { pyramidsView, view, diningPyramidsSun, roomPyramids, viewPool } from '../../assets/images';
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -24,59 +25,87 @@ export default function NavbarComponent() {
 
     return (
         <Navbar
+            isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
-            className="bg-transparent absolute top-0 left-0 right-0 z-50 px-4"
+            className="bg-white px-4"
             maxWidth="full"
-            data-aos="fade-down"
-            data-aos-duration="1000"
         >
-            <NavbarContent className="shrink-0">
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden text-white"
-                />
-                <NavbarBrand className="shrink min-w-0" data-aos="fade-right" data-aos-delay="200">
-                    <Link as={RouterLink} to="/" className="flex items-center no-underline">
-                        <Logo className="w-8 h-8 sm:w-10 sm:h-10" textClassName="text-sm sm:text-base" />
+            <NavbarContent justify="start" className="flex-grow-0">
+                <NavbarBrand className="flex items-center gap-3">
+                    <Link as={RouterLink} to="/" className="flex items-center gap-3 no-underline">
+                        <img src="/src/assets/Logo-Notext-cropped.svg" alt="Logo" className="h-10 w-auto" />
+                        <span className="text-[#ba8b4e] font-semibold text-lg font-display">7 Gates Boutique Hotel Egypt</span>
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-6" justify="center" data-aos="fade-down" data-aos-delay="300">
+            <NavbarContent className="hidden sm:flex gap-6" justify="end">
                 <NavbarItem>
-                    <Link as={RouterLink} to="/about" className="text-brand-50 hover:text-brand-400 font-medium">
+                    <Link 
+                        as={RouterLink} 
+                        to="/about" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([pyramidsView])}
+                    >
                         About Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/contact" className="text-brand-50 hover:text-brand-400 font-medium">
+                    <Link 
+                        as={RouterLink} 
+                        to="/contact" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([diningPyramidsSun])}
+                    >
                         Contact Us
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/services" className="text-brand-50 hover:text-brand-400 font-medium">
+                    <Link 
+                        as={RouterLink} 
+                        to="/services" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([view])}
+                    >
                         Our Services
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link as={RouterLink} to="/gallery" className="text-brand-50 hover:text-brand-400 font-medium">
+                    <Link 
+                        as={RouterLink} 
+                        to="/gallery" 
+                        className="font-medium text-[#ba8b4e] hover:text-[#ba8b4e]/80"
+                        onMouseEnter={() => preloadImages([viewPool])}
+                    >
                         Gallery
                     </Link>
                 </NavbarItem>
-            </NavbarContent>
-            <NavbarContent justify="end" className="shrink-0" data-aos="fade-left" data-aos-delay="400">
-                <NavbarItem className="hidden sm:flex">
-                    <Button as={RouterLink} to="/book" className="bg-brand-600 text-brand-50 hover:bg-brand-500 px-6 py-2 rounded font-semibold" variant="flat">
+                <NavbarItem>
+                    <Button 
+                        as={RouterLink} 
+                        to="/book" 
+                        className="bg-[#ba8b4e] text-white hover:bg-[#ba8b4e]/90 px-6 py-2 rounded font-semibold" 
+                        variant="flat"
+                        onMouseEnter={() => preloadImages([roomPyramids])}
+                    >
                         Book Now
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="bg-palace-900/95">
+
+            <NavbarContent className="sm:hidden" justify="end">
+                <NavbarMenuToggle
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    className="text-[#ba8b4e]"
+                />
+            </NavbarContent>
+
+            <NavbarMenu className="bg-white">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
                             as={RouterLink}
-                            className="w-full text-brand-50 hover:text-brand-400 font-medium"
+                            className="w-full font-medium text-[#ba8b4e]"
                             to={
                                 item === "About Us" ? "/about" :
                                     item === "Contact Us" ? "/contact" :
@@ -84,13 +113,14 @@ export default function NavbarComponent() {
                                             item === "Gallery" ? "/gallery" : "#"
                             }
                             size="lg"
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             {item}
                         </Link>
                     </NavbarMenuItem>
                 ))}
                 <NavbarMenuItem>
-                    <Button as={RouterLink} to="/book" className="bg-brand-500 text-brand-50 hover:bg-brand-400 px-6 py-3 rounded font-semibold w-full" variant="flat">
+                    <Button as={RouterLink} to="/book" className="bg-[#ba8b4e] text-white px-6 py-3 rounded font-semibold w-full" variant="flat" onClick={() => setIsMenuOpen(false)}>
                         Book Now
                     </Button>
                 </NavbarMenuItem>

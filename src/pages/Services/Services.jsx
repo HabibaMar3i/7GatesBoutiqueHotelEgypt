@@ -1,109 +1,115 @@
 import Hero from '../../components/Hero/Hero';
-import { bathroom } from '../../assets/images';
+import { 
+    sauna2, 
+    pool, 
+    roomMaster, 
+    dining2, 
+    view, 
+    openBuffet,
+    reception
+} from '../../assets/images';
 
 export default function Services() {
+    const services = [
+        {
+            title: "Luxury Suites",
+            description: "Elegantly appointed rooms and suites with panoramic pyramid views, marble bathrooms, and premium Egyptian cotton linens.",
+            image: roomMaster
+        },
+        {
+            title: "Infinity Pool",
+            description: "Stunning rooftop infinity pool with unobstructed views of the Pyramids, perfect for sunset swims and stargazing.",
+            image: pool
+        },
+        {
+            title: "Spa & Jacuzzi",
+            description: "Rejuvenating spa treatments and private jacuzzi suites offering ancient Egyptian wellness rituals and modern therapies.",
+            image: sauna2
+        },
+        {
+            title: "Gourmet Dining",
+            description: "Award-winning restaurants featuring authentic Egyptian cuisine and international dishes crafted by renowned chefs.",
+            image: dining2
+        },
+        {
+            title: "Master Chefs",
+            description: "Internationally trained culinary masters specializing in Egyptian delicacies, Mediterranean fusion, and contemporary cuisine.",
+            image: openBuffet
+        },
+        {
+            title: "Cultural Experiences",
+            description: "Exclusive guided tours, private pyramid access, traditional music performances, and authentic cultural immersion programs.",
+            image: reception
+        }
+    ];
+
     return (
-        <div>
+        <div className="bg-white min-h-screen">
             <Hero 
-                title="Our Services"
+                title="Our Services" 
                 subtitle="Luxury amenities and personalized experiences await you"
-                backgroundImage={bathroom}
+                backgroundImage={view}
                 height="h-96"
             />
             
-            <div className="py-16 px-6 bg-gradient-to-b from-palace-900 to-palace-800">
+            <section className="py-24 px-4 md:px-12">
                 <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16" data-aos="fade-up">
-                        <h2 className="text-4xl font-bold mb-6 text-brand-400 font-display">Luxury Amenities & Services</h2>
-                        <p className="text-xl text-brand-100/80 max-w-3xl mx-auto leading-relaxed">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Luxury Amenities & Services</h2>
+                        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
                             Indulge in world-class amenities designed to elevate your Egyptian adventure
                         </p>
                     </div>
                     
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="100">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-bed text-white text-2xl"></i>
+                    <div className="grid md:grid-cols-2 gap-12 mb-20">
+                        {services.map((service, index) => (
+                            <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8`}>
+                                <div className="md:w-1/2">
+                                    <img src={service.image} alt={service.title} className="w-full h-64 object-cover rounded-lg" />
+                                </div>
+                                <div className="md:w-1/2">
+                                    <h3 className="text-2xl font-bold mb-4 text-[#ba8b4e] font-display">{service.title}</h3>
+                                    <p className="text-lg text-gray-700 leading-relaxed">{service.description}</p>
+                                </div>
                             </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Luxury Suites</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Elegantly appointed rooms and suites with panoramic pyramid views, marble bathrooms, and premium Egyptian cotton linens.
-                            </p>
-                        </div>
-                        
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="200">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-swimming-pool text-white text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Infinity Pool</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Stunning rooftop infinity pool with unobstructed views of the Pyramids, perfect for sunset swims and stargazing.
-                            </p>
-                        </div>
-                        
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="300">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-spa text-white text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Spa & Jacuzzi</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Rejuvenating spa treatments and private jacuzzi suites offering ancient Egyptian wellness rituals and modern therapies.
-                            </p>
-                        </div>
-                        
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="100">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-utensils text-white text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Gourmet Dining</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Award-winning restaurants featuring authentic Egyptian cuisine and international dishes crafted by renowned chefs.
-                            </p>
-                        </div>
-                        
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="200">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-user-tie text-white text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Master Chefs</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Internationally trained culinary masters specializing in Egyptian delicacies, Mediterranean fusion, and contemporary cuisine.
-                            </p>
-                        </div>
-                        
-                        <div className="bg-brand-50/10 backdrop-blur-sm rounded-xl p-8 border border-brand-400/20 text-center" data-aos="flip-left" data-aos-delay="300">
-                            <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i className="fas fa-theater-masks text-white text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-4 text-brand-300">Cultural Experiences</h3>
-                            <p className="text-brand-100/80 leading-relaxed">
-                                Exclusive guided tours, private pyramid access, traditional music performances, and authentic cultural immersion programs.
-                            </p>
-                        </div>
+                        ))}
                     </div>
                     
-                    <div className="bg-brand-50/5 rounded-2xl p-12 border border-brand-400/10 text-center" data-aos="zoom-in">
-                        <h3 className="text-3xl font-semibold mb-6 text-brand-400 font-display">Personalized Service</h3>
-                        <p className="text-lg text-brand-100/80 max-w-4xl mx-auto leading-relaxed mb-8">
+                    <div className="bg-[#ba8b4e] rounded-lg p-12 mb-16">
+                        <h2 className="text-3xl font-bold mb-6 text-white font-display text-center">Personalized Service</h2>
+                        <p className="text-lg text-white leading-relaxed text-center max-w-4xl mx-auto">
                             Our dedicated concierge team is available 24/7 to curate personalized experiences, from private desert excursions to exclusive dining reservations. Every detail is tailored to create your perfect Egyptian getaway.
                         </p>
-                        <div className="grid md:grid-cols-3 gap-6 text-center">
-                            <div data-aos="fade-up" data-aos-delay="100">
-                                <div className="text-2xl font-bold text-brand-400 mb-2">24/7</div>
-                                <p className="text-brand-200">Concierge Service</p>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="bg-gradient-to-br from-[#ba8b4e] to-[#ba8b4e]/80 p-8 rounded-xl text-white text-center transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i className="fas fa-clock text-2xl text-white"></i>
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="200">
-                                <div className="text-2xl font-bold text-brand-400 mb-2">5-Star</div>
-                                <p className="text-brand-200">Luxury Rating</p>
+                            <div className="text-3xl font-bold mb-2">24/7</div>
+                            <h3 className="text-lg font-semibold mb-2">Concierge Service</h3>
+                            <p className="text-sm opacity-90">Always available to assist you</p>
+                        </div>
+                        <div className="bg-gradient-to-br from-[#ba8b4e] to-[#ba8b4e]/80 p-8 rounded-xl text-white text-center transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i className="fas fa-star text-2xl text-white"></i>
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="300">
-                                <div className="text-2xl font-bold text-brand-400 mb-2">Premium</div>
-                                <p className="text-brand-200">Location</p>
+                            <div className="text-3xl font-bold mb-2">5-Star</div>
+                            <h3 className="text-lg font-semibold mb-2">Luxury Rating</h3>
+                            <p className="text-sm opacity-90">World-class hospitality standards</p>
+                        </div>
+                        <div className="bg-gradient-to-br from-[#ba8b4e] to-[#ba8b4e]/80 p-8 rounded-xl text-white text-center transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i className="fas fa-map-marker-alt text-2xl text-white"></i>
                             </div>
+                            <div className="text-3xl font-bold mb-2">Premium</div>
+                            <h3 className="text-lg font-semibold mb-2">Location</h3>
+                            <p className="text-sm opacity-90">Steps away from the Pyramids</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }
