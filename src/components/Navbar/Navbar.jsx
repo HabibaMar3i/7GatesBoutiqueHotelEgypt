@@ -12,7 +12,7 @@ import {
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
 import { preloadImages } from '../../utils/imagePreloader';
-import { pyramidsView, view, diningPyramidsSun, roomPyramids, viewPool } from '../../assets/images';
+import { pyramidsView, view, diningPyramidsSun, roomPyramids, viewPool, logoNoText } from '../../assets/images';
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -33,7 +33,7 @@ export default function NavbarComponent() {
             <NavbarContent justify="start" className="flex-grow-0">
                 <NavbarBrand className="flex items-center gap-3">
                     <Link as={RouterLink} to="/" className="flex items-center gap-3 no-underline">
-                        <img src="/src/assets/Logo-Notext-cropped.svg" alt="Logo" className="h-10 w-auto" />
+                        <img src={logoNoText} alt="Logo" className="h-10 w-auto" />
                         <span className="text-[#ba8b4e] font-semibold text-lg font-display">7 Gates Boutique Hotel Egypt</span>
                     </Link>
                 </NavbarBrand>

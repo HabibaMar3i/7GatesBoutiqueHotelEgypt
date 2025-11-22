@@ -37,6 +37,8 @@ import lightDecor3 from './light-decor (3).jpg';
 import lightDecorGood from './light-decor-good.jpg';
 import lightDecor from './light-decor.jpg';
 import logo from './logo.jpg';
+import logoNoText from './Logo-Notext-cropped.svg';
+import logoWhite from './logo-text-white-cropped.svg';
 import openBuffet from './open-buffet.jpg';
 import pedicure from './pedicure.jpg';
 import poolNight2 from './pool-night (2).jpg';
@@ -115,6 +117,8 @@ export {
     lightDecorGood,
     lightDecor,
     logo,
+    logoNoText,
+    logoWhite,
     openBuffet,
     pedicure,
     poolNight2,
