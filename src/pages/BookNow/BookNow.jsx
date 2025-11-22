@@ -1,6 +1,7 @@
 import Hero from '../../components/Hero/Hero';
 import { roomPyramids, roomCurtains, roomPyramids2 } from '../../assets/images';
 
+
 export default function BookNow() {
     return (
         <div className="bg-white min-h-screen">
@@ -15,11 +16,11 @@ export default function BookNow() {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
                         <div>
-                            <img src={roomCurtains} alt="Hotel Reception" className="w-full h-96 object-cover rounded-lg" />
+                            <img src={roomCurtains} alt="Hotel Reception" className="w-full h-96 object-cover rounded-lg" data-aos="fade-left" />
                         </div>
                         <div>
-                            <h2 className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Make Your Reservation</h2>
-                            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                            <h2 data-aos="fade-right" className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Make Your Reservation</h2>
+                            <p data-aos="fade-left" data-aos-delay="200" className="text-lg text-gray-700 mb-8 leading-relaxed">
                                 Experience unparalleled luxury at 7 Gates Boutique Hotel Egypt. Our dedicated reservations team is ready to help you plan your perfect stay near the ancient Pyramids of Giza.
                             </p>
                             
@@ -52,10 +53,10 @@ export default function BookNow() {
                     </div>
                     
                     <div className="relative rounded-lg overflow-hidden">
-                        <img src={roomPyramids2} alt="Hotel Building" className="w-full h-80 object-cover" />
+                        <img src={roomPyramids2} alt="Hotel Building" className="w-full h-80 object-cover" data-aos="zoom-in" />
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                             <div className="text-center text-white px-6">
-                                <h3 className="text-3xl font-bold mb-4 font-display">
+                                <h3 data-aos="zoom-in" className="text-3xl font-bold mb-4 font-display">
                                     We Look Forward to Welcoming You
                                 </h3>
                                 <p className="text-xl">

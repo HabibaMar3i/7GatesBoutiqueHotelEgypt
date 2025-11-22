@@ -10,9 +10,20 @@ import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/Services/Services';
 import BookNow from './pages/BookNow/BookNow';
 import { useImageCache } from './hooks/useImageCache';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
   useImageCache();
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  }, []);
   const routes = createBrowserRouter([
     {
       path: '', element: <MainLayout />, children: [

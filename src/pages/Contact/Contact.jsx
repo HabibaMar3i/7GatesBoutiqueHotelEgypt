@@ -1,6 +1,7 @@
 import Hero from '../../components/Hero/Hero';
 import { diningPyramidsSun } from '../../assets/images';
 
+
 export default function Contact() {
     return (
         <div className="bg-white min-h-screen">
@@ -14,12 +15,12 @@ export default function Contact() {
             <section className="py-24 px-4 md:px-12">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Get In Touch</h2>
+                        <h2 data-aos="fade-up" className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Get In Touch</h2>
                     </div>
                     
                     <div className="grid md:grid-cols-2 gap-16 mb-20">
                         <div>
-                            <h3 className="text-2xl font-bold mb-8 text-[#ba8b4e] font-display">Contact Information</h3>
+                            <h3 data-aos="fade-right" className="text-2xl font-bold mb-8 text-[#ba8b4e] font-display">Contact Information</h3>
                             
                             <div className="space-y-8">
                                 <div className="flex items-center gap-4">
@@ -70,7 +71,7 @@ export default function Contact() {
                         </div>
                         
                         <div>
-                            <h3 className="text-2xl font-bold mb-8 text-[#ba8b4e] font-display">Find Us</h3>
+                            <h3 data-aos="fade-left" className="text-2xl font-bold mb-8 text-[#ba8b4e] font-display">Find Us</h3>
                             <p className="text-lg text-gray-700 mb-6">
                                 Located just minutes from the iconic Pyramids of Giza
                             </p>

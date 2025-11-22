@@ -9,6 +9,7 @@ import {
     reception
 } from '../../assets/images';
 
+
 export default function Services() {
     const services = [
         {
@@ -55,8 +56,8 @@ export default function Services() {
             <section className="py-24 px-4 md:px-12">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Luxury Amenities & Services</h2>
-                        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                        <h2 data-aos="fade-up" className="text-4xl font-bold mb-8 text-[#ba8b4e] font-display">Luxury Amenities & Services</h2>
+                        <p data-aos="fade" data-aos-delay="200" className="text-xl text-gray-700 max-w-3xl mx-auto">
                             Indulge in world-class amenities designed to elevate your Egyptian adventure
                         </p>
                     </div>
@@ -65,19 +66,19 @@ export default function Services() {
                         {services.map((service, index) => (
                             <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8`}>
                                 <div className="md:w-1/2">
-                                    <img src={service.image} alt={service.title} className="w-full h-64 object-cover rounded-lg" />
+                                    <img src={service.image} alt={service.title} className="w-full h-64 object-cover rounded-lg" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} />
                                 </div>
                                 <div className="md:w-1/2">
-                                    <h3 className="text-2xl font-bold mb-4 text-[#ba8b4e] font-display">{service.title}</h3>
-                                    <p className="text-lg text-gray-700 leading-relaxed">{service.description}</p>
+                                    <h3 className="text-2xl font-bold mb-4 text-[#ba8b4e] font-display" data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}>{service.title}</h3>
+                                    <p className="text-lg text-gray-700 leading-relaxed" data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} data-aos-delay="200">{service.description}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
                     
                     <div className="bg-[#ba8b4e] rounded-lg p-12 mb-16">
-                        <h2 className="text-3xl font-bold mb-6 text-white font-display text-center">Personalized Service</h2>
-                        <p className="text-lg text-white leading-relaxed text-center max-w-4xl mx-auto">
+                        <h2 data-aos="zoom-in" className="text-3xl font-bold mb-6 text-white font-display text-center">Personalized Service</h2>
+                        <p data-aos="zoom-in" data-aos-delay="200" className="text-lg text-white leading-relaxed text-center max-w-4xl mx-auto">
                             Our dedicated concierge team is available 24/7 to curate personalized experiences, from private desert excursions to exclusive dining reservations. Every detail is tailored to create your perfect Egyptian getaway.
                         </p>
                     </div>
