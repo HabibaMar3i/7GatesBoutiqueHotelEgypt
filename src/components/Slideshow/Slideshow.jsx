@@ -6,8 +6,8 @@ export default function Slideshow() {
     
     const slides = [
         "/pool.webp",
-        "/reception.webp",
-        "/whole-building3.webp",
+        "/Reception.webp",
+        "/whole-building (3).webp",
         "/room-pyramids.webp",
         "/dining-pyramids.webp",
         "/view-pool.webp",

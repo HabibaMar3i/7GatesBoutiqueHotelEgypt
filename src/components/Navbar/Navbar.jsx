@@ -11,7 +11,8 @@ import {
     Button,
 } from "@heroui/react";
 import { Link as RouterLink } from 'react-router-dom';
-import { preloadImages } from '../../utils/imagePreloader';
+
+
 
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);

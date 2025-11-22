@@ -1,5 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom';
 
+
 export default function Footer() {
     return (
         <footer className="bg-[#ba8b4e] text-white py-12">

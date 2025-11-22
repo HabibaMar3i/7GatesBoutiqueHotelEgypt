@@ -16,12 +16,12 @@ export default function Services() {
         {
             title: "Spa & Jacuzzi",
             description: "Rejuvenating spa treatments and private jacuzzi suites offering ancient Egyptian wellness rituals and modern therapies.",
-            image: "/sauna2.webp"
+            image: "/sauna (2).webp"
         },
         {
             title: "Gourmet Dining",
             description: "Award-winning restaurants featuring authentic Egyptian cuisine and international dishes crafted by renowned chefs.",
-            image: "/dining2.webp"
+            image: "/dining (2).webp"
         },
         {
             title: "Master Chefs",
@@ -31,7 +31,7 @@ export default function Services() {
         {
             title: "Cultural Experiences",
             description: "Exclusive guided tours, private pyramid access, traditional music performances, and authentic cultural immersion programs.",
-            image: "/reception.webp"
+            image: "/Reception.webp"
         }
     ];
 

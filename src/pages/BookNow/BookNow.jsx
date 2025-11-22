@@ -2,6 +2,7 @@ import Hero from '../../components/Hero/Hero';
 
 
 
+
 export default function BookNow() {
     return (
         <div className="bg-white min-h-screen overflow-x-hidden">
@@ -42,8 +43,8 @@ export default function BookNow() {
                                     <div>
                                         <p className="text-lg text-gray-700">
                                             Email us at{' '}
-                                            <a href="mailto:reservations@7gatesboutiquehotelegypt.com" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold underline break-all">
-                                                reservations@7gatesboutiquehotelegypt.com
+                                            <a href="mailto:res@7gatesboutiquehotelegypt.com" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold underline break-all">
+                                                res@7gatesboutiquehotelegypt.com
                                             </a>
                                         </p>
                                     </div>
@@ -53,7 +54,7 @@ export default function BookNow() {
                     </div>
                     
                     <div className="relative rounded-lg overflow-hidden">
-                        <img src="/room-pyramids2.webp" alt="Hotel Building" className="w-full h-80 object-cover" data-aos="zoom-in" />
+                        <img src="/room-pyramids (2).webp" alt="Hotel Building" className="w-full h-80 object-cover" data-aos="zoom-in" />
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                             <div className="text-center text-white px-6">
                                 <h3 data-aos="zoom-in" className="text-3xl font-bold mb-4 font-display">

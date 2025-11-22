@@ -2,6 +2,7 @@ import Hero from '../../components/Hero/Hero';
 
 
 
+
 export default function Contact() {
     return (
         <div className="bg-white min-h-screen overflow-x-hidden">

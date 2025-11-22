@@ -1,8 +1,9 @@
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ImageGrid from '../../components/ImageGrid/ImageGrid';
-
 import { Link } from 'react-router-dom';
+
+
 
 
 export default function HomePage() {

@@ -1,10 +1,11 @@
 import Hero from '../../components/Hero/Hero';
+o
 
 
 
 export default function About() {
     return (
-        <div className="bg-white min-h-screen overflow-x-hidden">
+        <div className="bg-white min-h-screen overflow-hidden">
             <Hero 
                 title="About Us" 
                 subtitle="Discover our story and commitment to exceptional hospitality"
