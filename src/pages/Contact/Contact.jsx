@@ -29,7 +29,7 @@ export default function Contact() {
                                     <div>
                                         <h4 className="text-xl font-semibold mb-2 text-gray-800">Phone</h4>
                                         <a href="tel:+201001600307" className="text-lg text-[#ba8b4e] hover:text-[#ba8b4e]/80">
-                                            +20 1001600300
+                                            +20 1001600307
                                         </a>
                                     </div>
                                 </div>

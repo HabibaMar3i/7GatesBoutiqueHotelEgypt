@@ -35,7 +35,7 @@ export default function NotFound() {
                 </div>
                 
                 <div className="mt-12 text-sm text-gray-500">
-                    <p>Need help? Call us at <a href="tel:+201001600307" className="text-[#ba8b4e] hover:underline">+20 1001600300</a></p>
+                    <p>Need help? Call us at <a href="tel:+201001600307" className="text-[#ba8b4e] hover:underline">+20 1001600307</a></p>
                 </div>
             </div>
         </div>

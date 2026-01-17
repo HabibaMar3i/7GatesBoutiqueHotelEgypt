@@ -34,7 +34,7 @@ export default function Footer() {
                 {/* Phone */}
                 <div>
                     <a href="tel:+201001600307" className="text-white hover:text-white/80">
-                        +20 1001600300
+                        +20 1001600307
                     </a>
                 </div>
 
