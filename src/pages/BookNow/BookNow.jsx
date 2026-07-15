@@ -31,7 +31,7 @@ export default function BookNow() {
                                     <div>
                                         <p className="text-lg text-gray-700">
                                             Call us directly at{' '}
-                                            <a href="tel:+201001600307" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold">
+                                            <a href="tel:+201001600303" className="text-[#ba8b4e] hover:text-[#ba8b4e]/80 font-semibold">
                                                 +20 1001600307
                                             </a>
                                         </p>
